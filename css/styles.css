@@ -72,7 +72,7 @@ img {
 
 .logo {
   display: flex;
-  padding: 32px 0;
+  padding: 24px 0;
   margin-right: 93px;
 
   color: #000000;
@@ -147,7 +147,7 @@ img {
 /* -------------------------PORTFOLIO -----------------------*/
 
 .portfolio {
-  display: none;
+  visibility: hidden;
 }
 
 /* -----------------------Button nav-------------------------*/
@@ -207,11 +207,12 @@ img {
   box-sizing: border-box;
 }
 
-.desc {
-  border-bottom: 1px solid #eeeeee;
+.portfolio-desc {
+  border: 1px solid #eeeeee;
+  border-top: none;
+  padding: 20px 24px;
 }
 .work-exemple .type {
-  margin-top: 20px;
   margin-bottom: 4px;
 
   color: var(--primary-tex-color);
@@ -221,10 +222,6 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
 }
-.work-text {
-  margin-bottom: 20px;
-}
-
 /* ---------------ОСНОВНАЯ СТРАНИЦА-------------------------- */
 /* -----------------------Hero ------------------------------*/
 .hero {
@@ -276,15 +273,14 @@ img {
 }
 .features {
   display: flex;
+  margin-right: -30px;
 }
 
 .peculiarities {
-  display: none;
+  visibility: hidden;
 }
 .sektion-list {
-  padding-right: 20px;
-}
-.sektion-list:not(:last-child) {
+  width: calc(100% / 3 - 30px);
   margin-right: 30px;
 }
 
@@ -332,10 +328,25 @@ img {
 .resume:not(:last-child) {
   margin-right: 30px;
 }
-
-.photo {
-  margin-bottom: 30px;
+.resume {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid #eeeeee;
 }
+
+.desc {
+  /* box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  border: 1px solid #eeeeee; */
+  padding: 30px 0;
+  background: var(--title-background-color);
+}
+
+/* .photo {
+  margin-bottom: 30px;
+} */
 .name {
   margin-bottom: 10px;
 
@@ -345,9 +356,9 @@ img {
   font-size: 16px;
   line-height: 1.19;
 }
-.profession {
+/* .profession {
   margin-bottom: 30px;
-}
+} */
 .team .resume {
   background-color: var(--title-background-color);
 
